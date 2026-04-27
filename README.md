@@ -1,14 +1,3 @@
-<!--
-  Drop this file into a NEW public repo named exactly "Alvarez-Jose"
-  (it must match your username for GitHub to surface it on your profile).
-
-  Steps:
-    1. Create repo: https://github.com/new  →  name = Alvarez-Jose, public, "Add a README"
-    2. Replace the auto-generated README with this file
-    3. Personalize the [REPLACE …] tags below
-    4. Commit
-  -->
-
 # Hi, I'm Antonio 👋
 
 M.S. Natural Language Processing candidate at **UC Santa Cruz** ($86K NLP Fellowship), with 3+ years building secure, large-scale software for the Department of Defense. Now focused on transformer fine-tuning, hybrid retrieval systems, and human-in-the-loop ML pipelines.
@@ -16,33 +5,56 @@ M.S. Natural Language Processing candidate at **UC Santa Cruz** ($86K NLP Fellow
 - 🎓 M.S. NLP @ UC Santa Cruz, expected Dec 2026
 - 🛠️ Currently: Graduate Researcher on a human-rights NLP classification system (Arabic / English)
 - 💼 Previously: Software Engineer @ Peraton — IAM platforms and data pipelines for 50,000+ DoD users
-- 🔐 DoD Secret Clearance · CompTIA Security+
+- 🔐 DoD Secret Clearance (currently inactive — left Peraton Dec 2025) · CompTIA Security+
 - 📍 Santa Cruz, CA
-- 🔗 [LinkedIn](https://linkedin.com/in/jose-alvarez-maciel) · ✉️ jalva182@ucsc.edu
+- 🔗 [LinkedIn](https://linkedin.com/in/jose-alvarez-maciel) · 🤗 [Hugging Face](https://huggingface.co/jalva182) · ✉️ jalva182@ucsc.edu
 
 ## What I'm working on now
 
-- **Human-rights NLP system** — fine-tuning DeBERTa v3 for multilabel classification of Arabic/English news incidents; building a FastAPI + Streamlit pipeline with human-in-the-loop review
-- **Hybrid retrieval research** — comparing BM25 / dense (BGE-v1.5) / HyDE on FIQA with BEIR-standard nDCG@k and Recall@k
-- **GRPO fine-tuning experiments** — exploring preference optimization on small open models
+- **Human-rights NLP system** — fine-tuning DeBERTa v3 for multilabel classification of Arabic/English news incidents; building a FastAPI + Streamlit pipeline with human-in-the-loop review (private research repo)
+- **Sanitized HITL NLP template** — a public, generalized version of the architecture above on a public dataset, so the engineering work can be open
+- **GRPO fine-tuning** — extending a teammate's GRPO training section on Llama-3-8B; published two LoRA adapters on Hugging Face
 
-## Featured projects
+---
 
+## Solo / lead work
 
+Repositories I built and own end-to-end.
 
 | Project | Stack | What it does |
 |---|---|---|
-| [Applied NLP Multi-Label Pipeline](https://github.com/Alvarez-Jose/applied-nlp-multilabel-pipeline) | DeBERTa v3 · PyTorch · Streamlit · Sheets API | Human-in-the-loop pipeline classifying 5,000+ incident reports against a 10-label codebook; margin-based uncertainty routing to expert review |
-| [Multi-Turn RAG for Financial QA](https://github.com/Alvarez-Jose/multi-turn-rag-fiqa) | SentenceTransformers (BGE-v1.5) · BM25 · HyDE · BEIR | SemEval Task 8 hybrid retriever with HyDE-augmented dense ranking; benchmarked nDCG@k / Recall@k on FIQA |
-| [AI Multi-Agent Desktop Assistant](https://github.com/Alvarez-Jose/multi-agent-desktop-assistant) | Python · LLM tool-use · Windows hotkeys | Decision-layer LLM routing intents to specialized agents (web, OS, dev, email, scheduling) with scoped permissions |
-| [unsloth-grpo-project](https://github.com/Alvarez-Jose/unsloth-grpo-project) | Unsloth · PyTorch · TRL | Group Relative Policy Optimization (GRPO) fine-tuning experiments on small open models with Unsloth |
+| **[applied-nlp-multilabel-pipeline](https://github.com/Alvarez-Jose/applied-nlp-multilabel-pipeline)** | DeBERTa v3 · PyTorch · Streamlit · Sheets API | Sanitized human-in-the-loop NLP template — DeBERTa v3 multilabel head with margin-based uncertainty routing to a Streamlit reviewer. Engineering scaffolding generalized from a private research project; uses a public dataset, no sensitive data. *Implementation in progress.* |
+| **[nlp-ml-journey](https://github.com/Alvarez-Jose/nlp-ml-journey)** | Jupyter · PyTorch · HuggingFace · scikit-learn | Curated NLP / ML learning log — annotated notebooks working through transformers, retrieval, fine-tuning, and evaluation. |
+
+**Trained models on Hugging Face**
+
+| Model | Base | Method | Link |
+|---|---|---|---|
+| `jalva182/cli-agent-model` | `unsloth/llama-3-8b-Instruct` | GRPO + LoRA (TRL via Unsloth) | [🤗](https://huggingface.co/jalva182/cli-agent-model) |
+| `jalva182/cli-agent-model-gpu1` | `unsloth/llama-3-8b-Instruct` | GRPO + LoRA (TRL via Unsloth) | [🤗](https://huggingface.co/jalva182/cli-agent-model-gpu1) |
+
+These came out of the team-derived GRPO training work below.
+
+---
+
+## Team / collaborative work
+
+Honest framing: these are repos where I contributed as a team member. I credit teammates by handle and link the work I actually did.
+
+| Project | Role | Contribution |
+|---|---|---|
+| **[unsloth-grpo-project](https://github.com/Alvarez-Jose/unsloth-grpo-project)** | Extending [@Carson1829](https://github.com/Carson1829)'s GRPO training section | GUI/Tkinter wrapper, Docker + Northflank deployment, requirements/integration, training runs that produced the two Hugging Face adapters above |
+| **[Visualtaggy/ragx](https://github.com/Visualtaggy/ragx)** | SemEval-2025 Task 8 (FinQA), team member | Evaluation + data role (non-code contributions). My fork has been removed; upstream is the canonical version. |
+| **`Visualtaggy/project_cortex`** *(private team repo)* | Multi-agent desktop assistant | C code, Python ↔ GUI bridge, training-code improvements on top of [@Carson1829](https://github.com/Carson1829)'s work. Model artifacts published on Hugging Face (linked above). |
+
+---
 
 ## Tech I work with
 
-**Languages** — Python · Java · JavaScript · TypeScript · C++ · SQL
-**ML / NLP** — PyTorch · HuggingFace Transformers · DeBERTa · BERT · spaCy · NLTK · scikit-learn · SentenceTransformers
-**Methods** — Multilabel classification · RAG · Hybrid retrieval · Fine-tuning · Transfer learning · Human-in-the-loop ML
-**Infra** — FastAPI · Flask · Spring Boot · React · Docker · Streamlit · Linux · Git
+**Languages** — Python · Java · JavaScript · TypeScript · C · C++ · SQL
+**ML / NLP** — PyTorch · HuggingFace Transformers · DeBERTa · BERT · spaCy · NLTK · scikit-learn · SentenceTransformers · TRL · Unsloth · PEFT / LoRA
+**Methods** — Multilabel classification · Hybrid retrieval (BM25 + dense + HyDE) · GRPO / fine-tuning · Transfer learning · Human-in-the-loop ML
+**Infra** — FastAPI · Flask · Spring Boot · React · Docker · Northflank · Streamlit · Linux · Git
 
 ## Selected experience
 
@@ -52,12 +64,4 @@ M.S. Natural Language Processing candidate at **UC Santa Cruz** ($86K NLP Fellow
 ---
 
 📫 **Open to:** ML / NLP Engineer · ML Research Engineer · LLM / Agent Engineer · Cleared SWE roles
-🤝 **Reach me:** [LinkedIn](https://linkedin.com/in/jose-alvarez-maciel) · [Email](mailto:jalva182@ucsc.edu)
-
-<!--
-  Optional: contribution-stat banners. These render automatically once your repo is public.
-  Remove if you'd rather keep the README minimal.
-
-  ![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=Alvarez-Jose&theme=default)
-  ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Alvarez-Jose&layout=compact)
-  -->
+🤝 **Reach me:** [LinkedIn](https://linkedin.com/in/jose-alvarez-maciel) · [Hugging Face](https://huggingface.co/jalva182) · [Email](mailto:jalva182@ucsc.edu)
