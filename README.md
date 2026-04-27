@@ -24,6 +24,7 @@ Repositories I built and own end-to-end.
 |---|---|---|
 | **[applied-nlp-multilabel-pipeline](https://github.com/Alvarez-Jose/applied-nlp-multilabel-pipeline)** | DeBERTa v3 · PyTorch · Streamlit · Sheets API | Human-in-the-loop multilabel NLP pipeline — DeBERTa v3 + margin-based reviewer routing + Sheets feedback loop. Applied in production to a private human-rights research project. Source-available, restricted-use; see [NOTICE.md](https://github.com/Alvarez-Jose/applied-nlp-multilabel-pipeline/blob/main/NOTICE.md). |
 | **[nlp-ml-journey](https://github.com/Alvarez-Jose/nlp-ml-journey)** | Jupyter · PyTorch · HuggingFace · scikit-learn | Curated NLP / ML learning log — annotated notebooks working through transformers, retrieval, fine-tuning, and evaluation. |
+| **[multi-agent-cli-bridge](https://github.com/Alvarez-Jose/multi-agent-cli-bridge)** | Python · C · Tkinter · Windows API | C runtime + Python ↔ C bridge + Tkinter GUIs + agent routing layer for a multi-agent CLI assistant. Runs on top of the two LoRA adapters above. Extracted from a private team multi-agent desktop assistant; restricted-use, see [NOTICE.md](https://github.com/Alvarez-Jose/multi-agent-cli-bridge/blob/main/NOTICE.md). |
 
 **Trained models on Hugging Face**
 
@@ -44,7 +45,7 @@ Honest framing: these are repos where I contributed as a team member. I credit t
 |---|---|---|
 | **[unsloth-grpo-project](https://github.com/Alvarez-Jose/unsloth-grpo-project)** | Extending [@Carson1829](https://github.com/Carson1829)'s GRPO training section | GUI/Tkinter wrapper, Docker + Northflank deployment, requirements/integration, training runs that produced the two Hugging Face adapters above |
 | **[Visualtaggy/ragx](https://github.com/Visualtaggy/ragx)** | SemEval-2025 Task 8 (FinQA), team member | Evaluation + data role (non-code contributions). My fork has been removed; upstream is the canonical version. |
-| **`Visualtaggy/project_cortex`** *(private team repo)* | Multi-agent desktop assistant | C code, Python ↔ GUI bridge, training-code improvements on top of [@Carson1829](https://github.com/Carson1829)'s work. Model artifacts published on Hugging Face (linked above). |
+| **`Visualtaggy/project_cortex`** *(private team repo)* | Multi-agent desktop assistant | C runtime, Python ↔ GUI bridge, Tkinter GUIs, and the agent routing layer — extracted to public [`multi-agent-cli-bridge`](https://github.com/Alvarez-Jose/multi-agent-cli-bridge). Model artifacts on Hugging Face (linked above); broader orchestration stays in the team-private upstream. |
 
 ---
 
