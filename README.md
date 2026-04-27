@@ -11,8 +11,7 @@ M.S. Natural Language Processing candidate at **UC Santa Cruz** ($86K NLP Fellow
 
 ## What I'm working on now
 
-- **Human-rights NLP system** — fine-tuning DeBERTa v3 for multilabel classification of Arabic/English news incidents; building a FastAPI + Streamlit pipeline with human-in-the-loop review (private research repo)
-- **Sanitized HITL NLP template** — a public, generalized version of the architecture above on a public dataset, so the engineering work can be open
+- **Human-rights NLP system** ([applied-nlp-multilabel-pipeline](https://github.com/Alvarez-Jose/applied-nlp-multilabel-pipeline)) — fine-tuning DeBERTa v3 for multilabel classification of Arabic/English news incidents; FastAPI + Streamlit pipeline with human-in-the-loop review. Source-available, restricted-use; data not included — see [NOTICE](https://github.com/Alvarez-Jose/applied-nlp-multilabel-pipeline/blob/main/NOTICE.md).
 - **GRPO fine-tuning** — extending a teammate's GRPO training section on Llama-3-8B; published two LoRA adapters on Hugging Face
 
 ---
@@ -23,7 +22,7 @@ Repositories I built and own end-to-end.
 
 | Project | Stack | What it does |
 |---|---|---|
-| **[applied-nlp-multilabel-pipeline](https://github.com/Alvarez-Jose/applied-nlp-multilabel-pipeline)** | DeBERTa v3 · PyTorch · Streamlit · Sheets API | Sanitized human-in-the-loop NLP template — DeBERTa v3 multilabel head with margin-based uncertainty routing to a Streamlit reviewer. Engineering scaffolding generalized from a private research project; uses a public dataset, no sensitive data. *Implementation in progress.* |
+| **[applied-nlp-multilabel-pipeline](https://github.com/Alvarez-Jose/applied-nlp-multilabel-pipeline)** | DeBERTa v3 · PyTorch · Streamlit · Sheets API | Human-in-the-loop multilabel NLP pipeline — DeBERTa v3 + margin-based reviewer routing + Sheets feedback loop. Applied in production to a private human-rights research project. Source-available, restricted-use; see [NOTICE.md](https://github.com/Alvarez-Jose/applied-nlp-multilabel-pipeline/blob/main/NOTICE.md). |
 | **[nlp-ml-journey](https://github.com/Alvarez-Jose/nlp-ml-journey)** | Jupyter · PyTorch · HuggingFace · scikit-learn | Curated NLP / ML learning log — annotated notebooks working through transformers, retrieval, fine-tuning, and evaluation. |
 
 **Trained models on Hugging Face**
@@ -64,4 +63,4 @@ Honest framing: these are repos where I contributed as a team member. I credit t
 ---
 
 📫 **Open to:** ML / NLP Engineer · ML Research Engineer · LLM / Agent Engineer · Cleared SWE roles
-🤝 **Reach me:** [LinkedIn](https://linkedin.com/in/jose-alvarez-maciel) · [Hugging Face](https://huggingface.co/jalva182) · [Email](mailto:jalva182@ucsc.edu)
+🤝 **Reach me:** [LinkedIn](https://linkedin.com/in
