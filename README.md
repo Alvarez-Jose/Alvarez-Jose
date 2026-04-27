@@ -63,4 +63,4 @@ Honest framing: these are repos where I contributed as a team member. I credit t
 ---
 
 📫 **Open to:** ML / NLP Engineer · ML Research Engineer · LLM / Agent Engineer · Cleared SWE roles
-🤝 **Reach me:** [LinkedIn](https://linkedin.com/in
+🤝 **Reach me:** [LinkedIn](https://linkedin.com/in/jose-alvarez-maciel) · [Hugging Face](https://huggingface.co/jalva182) · [Email](mailto:jalva182@ucsc.edu)
