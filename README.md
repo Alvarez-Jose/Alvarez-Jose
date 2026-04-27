@@ -28,7 +28,7 @@ M.S. Natural Language Processing candidate at **UC Santa Cruz** ($86K NLP Fellow
 
 ## Featured projects
 
-> _Pin these on your profile — see also each repo's README for details._
+
 
 | Project | Stack | What it does |
 |---|---|---|
