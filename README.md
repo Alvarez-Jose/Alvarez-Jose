@@ -2,6 +2,7 @@
 M.S. NLP @ UC Santa Cruz (Dec 2026) · ex-Peraton Lead Data Engineer · RAG, LLM fine-tuning, human-in-the-loop NLP
 
 🌐 **[antonioalvarezmaciel.com](https://www.antonioalvarezmaciel.com)** — every project has a live in-browser demo
+
 💼 [LinkedIn](https://www.linkedin.com/in/jose-alvarez-maciel/) · 🤗 [Hugging Face](https://huggingface.co/jalva182) · ✉️ jalva182@ucsc.edu
 
 | Project | What it is | Demo |
